@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>الكيمياء الحيوية | Biochemistry — ترجمة وشرح</title>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;800&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f4f7fb;--card:#fff;--tx:#18222f;--mut:#5b6b7f;--pri:#0d9488;--pri2:#0f766e;--acc:#f59e0b;--bd:#dbe3ee;--en:#eef4ff;--ex:#ecfdf5}
+:root[data-theme=dark]{--bg:#0e1621;--card:#16212f;--tx:#e6edf5;--mut:#93a4b8;--pri:#2dd4bf;--pri2:#5eead4;--acc:#fbbf24;--bd:#27364a;--en:#1a2a44;--ex:#12332d}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--tx);font:16px/1.9 Cairo,Inter,system-ui,sans-serif}
+header{position:sticky;top:0;z-index:20;background:var(--card);border-bottom:1px solid var(--bd);display:flex;flex-wrap:wrap;gap:10px;align-items:center;padding:10px 16px}
+header h1{font-size:18px;margin:0;color:var(--pri);flex:1;min-width:180px}
+.seg{display:flex;border:1px solid var(--bd);border-radius:10px;overflow:hidden}
+.seg button,.ib{border:0;background:transparent;color:var(--tx);padding:7px 12px;cursor:pointer;font:inherit;font-size:14px}
+.seg button.on{background:var(--pri);color:#fff}
+.ib{border:1px solid var(--bd);border-radius:10px}
+#q{padding:8px 12px;border:1px solid var(--bd);border-radius:10px;background:var(--bg);color:var(--tx);font:inherit;font-size:14px;width:190px}
+.wrap{display:flex;max-width:1200px;margin:auto}
+nav{width:270px;flex-shrink:0;position:sticky;top:64px;align-self:flex-start;max-height:calc(100vh - 70px);overflow:auto;padding:14px}
+nav button{display:block;width:100%;text-align:start;background:var(--card);border:1px solid var(--bd);border-radius:12px;padding:10px 12px;margin-bottom:8px;cursor:pointer;color:var(--tx);font:inherit;font-size:14px}
+nav button.on{border-color:var(--pri);box-shadow:0 0 0 2px var(--pri) inset}
+nav small{display:block;color:var(--mut)}
+main{flex:1;padding:14px;min-width:0}
+.hero{background:linear-gradient(135deg,var(--pri),var(--pri2));color:#fff;border-radius:18px;padding:20px;margin-bottom:16px}
+.hero h2{margin:0 0 4px}.bar{height:8px;background:#ffffff40;border-radius:8px;margin-top:10px}.bar i{display:block;height:100%;background:var(--acc);border-radius:8px}
+.card{background:var(--card);border:1px solid var(--bd);border-radius:16px;margin-bottom:16px;overflow:hidden}
+.ch{display:flex;align-items:center;gap:10px;padding:12px 16px;border-bottom:1px solid var(--bd)}
+.pg{background:var(--acc);color:#222;border-radius:8px;padding:0 10px;font-weight:800;font-size:13px}
+.ch h3{margin:0;font-size:17px;flex:1}.ch label{font-size:13px;color:var(--mut);cursor:pointer}
+.bd{padding:14px 16px}.en{background:var(--en);border-inline-start:4px solid #3b82f6;padding:10px 14px;border-radius:10px;direction:ltr;text-align:left;font-family:Inter,sans-serif;font-size:15px;margin-bottom:10px;line-height:1.7}
+.ar{padding:4px 2px;margin-bottom:10px}.ex{background:var(--ex);border-inline-start:4px solid var(--pri);padding:10px 14px;border-radius:10px;font-size:15px}
+.ex b,.lbl{color:var(--pri2)}.lbl{font-size:12px;font-weight:800;display:block}
+.eq{direction:ltr;text-align:center;font:600 18px Inter,serif;background:var(--bg);border-radius:10px;padding:8px;margin:8px 0}
+.img{margin-top:10px}.img button{font:inherit;font-size:13px}.img img{width:100%;border-radius:10px;margin-top:8px;border:1px solid var(--bd);cursor:zoom-in}
+.soon{color:var(--mut);font-size:14px;background:var(--bg);padding:10px;border-radius:10px;border:1px dashed var(--bd)}
+ul{margin:6px 0;padding-inline-start:22px}
+#lb{display:none;position:fixed;inset:0;background:#000d;z-index:50;align-items:center;justify-content:center;cursor:zoom-out}#lb img{max-width:96vw;max-height:94vh;border-radius:8px}
+@media(max-width:820px){.wrap{display:block}nav{width:auto;position:static;max-height:none;display:flex;gap:8px;overflow-x:auto}nav button{min-width:180px}#q{width:100%}}
+</style>
+</head>
+<body>
+<header>
+<h1>🧬 الكيمياء الحيوية · Biochemistry</h1>
+<div class="seg" id="lang"><button data-l="en">English</button><button data-l="ar">عربي</button><button data-l="both" class="on">EN + عربي</button></div>
+<input id="q" type="search" placeholder="🔍 ابحث / Search">
+<button class="ib" id="th" title="Dark / Light">🌓</button>
+</header>
+<div class="wrap"><nav id="nav"></nav><main id="main"></main></div>
+<div id="lb"><img alt=""></div>
+<script>
+window.PAGES=window.PAGES||{};
+const TOC=[[1,'🧪','Buffers','المحاليل المنظِّمة',1,14],[2,'🧬','Introduction to Biochemistry','مقدمة الكيمياء الحيوية',15,21],[3,'💧','Water and pH','الماء والرقم الهيدروجيني',22,32],[4,'⚗️','Acids & Bases','الأحماض والقواعد',33,46],[5,'🍬','Carbohydrate Chemistry','كيمياء الكربوهيدرات',47,76],[6,'🔥','Carbohydrate Metabolism','أيض الكربوهيدرات',77,145],[7,'🧈','Lipids','الدهون',146,218],[8,'🥩','Protein Metabolism','أيض البروتينات',219,247]];
+</script>
+<script src="data/part1.js"></script>
+<script>
+const $=s=>document.querySelector(s);
+const ls={get(k,d){try{return localStorage.getItem(k)||d}catch(e){return d}},set(k,v){try{localStorage.setItem(k,v)}catch(e){}}};
+let lang=ls.get('lang','both'),ch=+ls.get('ch',1),q='',done=JSON.parse(ls.get('done','{}'));
+document.documentElement.dataset.theme=ls.get('theme','light');
+function mark(){document.querySelectorAll('#lang button').forEach(b=>b.classList.toggle('on',b.dataset.l===lang))}
+function nav(){$('#nav').innerHTML=TOC.map(c=>{const n=Object.keys(PAGES).filter(p=>p>=c[4]&&p<=c[5]).length;return`<button data-c="${c[0]}" class="${c[0]===ch?'on':''}">${c[1]} ${c[3]}<small>${c[2]} · ص ${c[4]}–${c[5]} · ${n?'✔ '+n+' / '+(c[5]-c[4]+1):'⏳'}</small></button>`}).join('')}
+function card(p){const d=PAGES[p],t=d?d.t:['Slide '+p,'الشريحة '+p];
+let h=`<div class="card" id="p${p}"><div class="ch"><span class="pg">${p}</span><h3>${lang==='en'?t[0]:lang==='ar'?t[1]:t[0]+' — '+t[1]}</h3><label><input type="checkbox" data-d="${p}" ${done[p]?'checked':''}> ✅ تمت</label></div><div class="bd">`;
+if(d){if(lang!=='ar')h+=`<div class="en"><span class="lbl">ENGLISH</span>${d.en}</div>`;
+if(lang!=='en')h+=`<div class="ar"><span class="lbl">الترجمة</span>${d.ar}</div><div class="ex"><span class="lbl">💡 الشرح</span>${d.ex}</div>`}
+else h+=`<div class="soon">⏳ ترجمة هذه الشريحة تُضاف في الجزء التالي — الشريحة الأصلية متاحة أدناه.</div>`;
+return h+`<div class="img"><button class="ib" data-i="${p}">🖼 الشريحة الأصلية</button></div></div></div>`}
+function render(){mark();nav();const c=TOC.find(x=>x[0]===ch);let ps=[];
+if(q){ps=Object.keys(PAGES).map(Number).filter(p=>JSON.stringify(PAGES[p]).toLowerCase().includes(q))}else for(let p=c[4];p<=c[5];p++)ps.push(p);
+const tot=Object.keys(PAGES).length,dn=Object.values(done).filter(Boolean).length;
+$('#main').innerHTML=`<div class="hero"><h2>${q?'🔍 نتائج البحث ('+ps.length+')':c[1]+' '+c[3]}</h2><div>${q?'':c[2]+' · الصفحات '+c[4]+'–'+c[5]}</div><div style="font-size:13px;margin-top:6px">تقدّمك: ${dn} صفحة مراجَعة · ${tot} / 247 مترجمة</div><div class="bar"><i style="width:${dn/2.47}%"></i></div></div>`+ps.map(card).join('')}
+document.addEventListener('click',e=>{const t=e.target;
+if(t.closest('[data-l]')){lang=t.closest('[data-l]').dataset.l;ls.set('lang',lang);render()}
+else if(t.closest('#nav button')){ch=+t.closest('#nav button').dataset.c;ls.set('ch',ch);q='';$('#q').value='';render();scrollTo(0,0)}
+else if(t.dataset.i){const b=t.parentNode;if(b.querySelector('img'))b.querySelector('img').remove();else{b.insertAdjacentHTML('beforeend',`<img loading="lazy" src="img/p${t.dataset.i}.jpg" alt="slide ${t.dataset.i}">`)}}
+else if(t.matches('.img img')){$('#lb img').src=t.src;$('#lb').style.display='flex'}
+else if(t.closest('#lb'))$('#lb').style.display='none';
+else if(t.id==='th'){const n=document.documentElement.dataset.theme==='dark'?'light':'dark';document.documentElement.dataset.theme=n;ls.set('theme',n)}});
+document.addEventListener('change',e=>{if(e.target.dataset.d){done[e.target.dataset.d]=e.target.checked;ls.set('done',JSON.stringify(done));render()}});
+$('#q').addEventListener('input',e=>{q=e.target.value.trim().toLowerCase();render()});
+render();
+</script>
+</body>
+</html>
